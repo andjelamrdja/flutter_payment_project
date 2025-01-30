@@ -26,6 +26,7 @@ const checkoutSuccessPage = fs.readFileSync(
     res.send(checkoutCancel);
   });
 
+  // https://flutterpaymentproject-production.up.railway.app/create-checkout-session
 
 router.post("/create-checkout-session", async (req, res) => {
   const customer = await stripe.customers.create({
