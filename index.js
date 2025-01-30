@@ -19,7 +19,7 @@ const stripe = Stripe(process.env.STRIPE_SECRET);
 mongoose.connect(process.env.MONGO_URL).then(() => console.log("db connected")).catch((err) => console.log(err));
 
 
-const endpointSecret = "whsec_S6BpKITxZGh5dlIowbVxe1qNR8u3duzo";
+const endpointSecret = "whsec_rfeobTMtxLVOtlEcD11qCi79QIg007EU";
 
 
 app.post('/webhook', express.raw({ type: 'application/json' }), (request, response) => {
